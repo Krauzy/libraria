@@ -4,38 +4,38 @@ import streamlit as st
 @st.cache
 def translate_disease(disease):
     if disease == 'Atelectasis':
-        return ('Atelectasia', 'Pulmão')
+        return 'Atelectasia', 'Pulmão'
     elif disease == 'Consolidation':
-        return ('Consolidação', 'Pulmão')
+        return 'Consolidação', 'Pulmão'
     elif disease == 'Infiltration':
-        return ('Infiltração', 'Pulmão')
+        return 'Infiltração', 'Pulmão'
     elif disease == 'Pneumothorax':
-        return ('Pneumotórax', 'Pulmão')
+        return 'Pneumotórax', 'Pulmão'
     elif disease == 'Edema':
-        return ('Edema', 'Generalizado')
+        return 'Edema', 'Generalizado'
     elif disease == 'Emphysema':
-        return ('Enfisema', 'Pulmão')
+        return 'Enfisema', 'Pulmão'
     elif disease == 'Fibrosis':
-        return ('Fibrose', 'Pulmão')
+        return 'Fibrose', 'Pulmão'
     elif disease == 'Effusion':
-        return ('Efusão', 'Cardiovascular')
+        return 'Efusão', 'Cardiovascular'
     elif disease == 'Pneumonia':
-        return ('Pneumonia', 'Pulmão')
+        return 'Pneumonia', 'Pulmão'
     elif disease == 'Pleural_Thickening':
-        return ('Espessamento Pleural', 'Vísceras')
+        return 'Espessamento Pleural', 'Vísceras'
     elif disease == 'Cardiomegaly':
-        return ('Cardiomegalia', 'Cardiovascular')
+        return 'Cardiomegalia', 'Cardiovascular'
     elif disease == 'Nodule':
-        return ('Nódulo', 'Tecido')
+        return 'Nódulo', 'Tecido'
     elif disease == 'Mass':
-        return ('Tumor', 'Câncer')
+        return 'Tumor', 'Câncer'
     elif disease == 'Hernia':
-        return ('Hérnia', 'Tecido')
+        return 'Hérnia', 'Tecido'
     elif disease == 'Lung Lesion':
-        return ('Lesão Pulmonar', 'Pulmão')
+        return 'Lesão Pulmonar', 'Pulmão'
     elif disease == 'Fracture':
-        return ('Fratura', 'Generalizada')
+        return 'Fratura', 'Generalizada'
     elif disease == 'Lung Opacity':
-        return ('Opacidade Pulmonar', 'Pulmão')
+        return 'Opacidade Pulmonar', 'Pulmão'
     elif disease == 'Enlarged Cardiomediastinum':
-        return ('Expansão do Cardiomediastino', 'Cardiovascular')
+        return 'Expansão do Cardiomediastino', 'Cardiovascular'

@@ -1,13 +1,12 @@
 import streamlit as st
 from src.data.cnn import XRayDeepVision
 from src.components.annotated_components import annotated_render
+from src.utils.constant import LANGUAGES
 
 
 def render():
     with st.sidebar:
         st.title('⚙️ Settings')
-        st.markdown('---')
-        translate_state = st.radio('Translate Disease', ('PT-BR', 'EN-US'))
         st.markdown('---')
         error_state = st.slider('Select the error min-value', 0.00, 1.00, 0.70, 0.01)
         st.markdown('---')
@@ -47,7 +46,7 @@ def render():
 
             progress_bar.progress(80)
 
-            annotated_render(dataset_filter, translate_state)
+            annotated_render(dataset_filter)
 
             progress_bar.progress(100)
             dinamic_container.empty()
